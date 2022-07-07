@@ -190,6 +190,8 @@ app.delete("/patient/:id", async (req, res) => {
   res.json("Eliminado correctamente");
 });
 
-app.listen(3001, () => {
+const PORT = process.env.PORT || 3001
+
+app.listen(PORT, () => {
   console.log("Server is running on port 3001");
 });
